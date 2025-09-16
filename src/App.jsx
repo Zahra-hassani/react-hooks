@@ -6,6 +6,7 @@ import Slider from "./Slider"
 import UserName from "./components/UserName"
 import Electronics from "./Electronics"
 import Dark from "./Dark"
+import Transition from "./Transition"
 // import User from "./User"
 export const nameContext = createContext();
 
@@ -25,6 +26,7 @@ function App() {
       <nameContext.Provider value={{name:"Ali",lastName:"Ahmadi"}}>
         <UserName />
       </nameContext.Provider>
+      <Transition />
     </>
   )
 }
